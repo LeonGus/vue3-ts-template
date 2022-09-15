@@ -1,38 +1,51 @@
-<script setup lang="ts">
-import { ref } from 'vue'
-
-defineProps<{ msg: string }>()
-
-const count = ref(0)
-</script>
-
 <template>
-  <h1>{{ msg }}</h1>
-
-  <div class="card">
-    <button type="button" @click="count++">count is {{ count }}</button>
-    <p>
-      Edit
-      <code>components/HelloWorld.vue</code> to test HMR
-    </p>
+  <div flex w-400 my-100 mx-auto rounded-12 border p-20 flex-wrap justify-center shadow>
+   <div w-80 h-80 flex border p-10 m-10 rounded-8 justify-center items-center>
+      <i w-8 h-8 bg-black dark:bg-white rounded-full></i>
+   </div>
+   <div w-80 h-80 flex border p-10 m-10 rounded-8 flex-col items-center justify-around >
+      <i w-8 h-8 bg-black dark:bg-white rounded-full></i>
+      <i w-8 h-8 bg-black dark:bg-white rounded-full></i>
+   </div>
+   <div w-80 h-80 flex border p-10 m-10 rounded-8 flex-col justify-around>
+      <i w-8 h-8 bg-black dark:bg-white rounded-full self-start></i>
+      <i w-8 h-8 bg-black dark:bg-white rounded-full self-center></i>
+      <i w-8 h-8 bg-black dark:bg-white rounded-full self-end></i>
+   </div>
+   <div w-80 h-80 flex border p-10 m-10 rounded-8 justify-center items-center flex-wrap>
+      <div w="100%" h-8 flex justify-around>
+         <i w-8 h-8 bg-black dark:bg-white rounded-full></i>
+         <i w-8 h-8 bg-black dark:bg-white rounded-full></i>
+      </div>
+      <div w="100%" h-8 flex justify-around>
+         <i w-8 h-8 bg-black dark:bg-white rounded-full></i>
+         <i w-8 h-8 bg-black dark:bg-white rounded-full></i>
+      </div>
+   </div>
+   <div w-80 h-80 flex border p-10 m-10 rounded-8 justify-center items-center flex-wrap>
+      <div w="100%" h-8 flex justify-around>
+         <i w-8 h-8 bg-black dark:bg-white rounded-full></i>
+         <i w-8 h-8 bg-black dark:bg-white rounded-full></i>
+      </div>
+      <i w-8 h-8 bg-black dark:bg-white rounded-full></i>
+      <div w="100%" h-8 flex justify-around>
+         <i w-8 h-8 bg-black dark:bg-white rounded-full></i>
+         <i w-8 h-8 bg-black dark:bg-white rounded-full></i>
+      </div>
+   </div>
+   <div w-80 h-80 flex border p-10 m-10 rounded-8 justify-center items-center flex-wrap>
+      <div w="100%" h-8 flex justify-around>
+         <i w-8 h-8 bg-black dark:bg-white rounded-full></i>
+         <i w-8 h-8 bg-black dark:bg-white rounded-full></i>
+      </div>
+      <div w="100%" h-8 flex justify-around>
+         <i w-8 h-8 bg-black dark:bg-white rounded-full></i>
+         <i w-8 h-8 bg-black dark:bg-white rounded-full></i>
+      </div>
+      <div w="100%" h-8 flex justify-around>
+         <i w-8 h-8 bg-black dark:bg-white rounded-full></i>
+         <i w-8 h-8 bg-black dark:bg-white rounded-full></i>
+      </div>
+   </div>
   </div>
-
-  <p>
-    Check out
-    <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank"
-      >create-vue</a
-    >, the official Vue + Vite starter
-  </p>
-  <p>
-    Install
-    <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>
-    in your IDE for a better DX
-  </p>
-  <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
 </template>
-
-<style scoped>
-.read-the-docs {
-  color: #888;
-}
-</style>
