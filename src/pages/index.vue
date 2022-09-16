@@ -15,10 +15,16 @@ const { userAge, addAge } = toRefs(useUser())
     <i icon-btn i-carbon-logo-github align-text-top />
     <p>
       store: 测试{{ userAge }}
-      <button @click="addAge">
+      <button id="btn-add" @click="addAge">
         ++
       </button>
     </p>
   </div>
 </template>
+
+<style lang="scss" scoped>
+  #btn-add {
+    color: $color-theme;
+  }
+</style>
 

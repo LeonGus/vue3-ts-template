@@ -1,3 +1,4 @@
+import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import { CreateVitePlugins } from './config/vite/plugin'
 
@@ -9,6 +10,13 @@ export default defineConfig({
     },
   },
   plugins: CreateVitePlugins(),
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import "${resolve(process.cwd(), '.', 'src/styles/var.scss')}";`,
+      },
+    },
+  },
   // build: {
   //   // ...其他配置
 
