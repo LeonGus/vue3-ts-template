@@ -1,51 +1,51 @@
 <template>
-  <div flex w-400 my-100 mx-auto rounded-12 border p-20 flex-wrap justify-center shadow>
-   <div w-80 h-80 flex border p-10 m-10 rounded-8 justify-center items-center>
-      <i w-8 h-8 bg-black dark:bg-white rounded-full></i>
-   </div>
-   <div w-80 h-80 flex border p-10 m-10 rounded-8 flex-col items-center justify-around >
-      <i w-8 h-8 bg-black dark:bg-white rounded-full></i>
-      <i w-8 h-8 bg-black dark:bg-white rounded-full></i>
-   </div>
-   <div w-80 h-80 flex border p-10 m-10 rounded-8 flex-col justify-around>
-      <i w-8 h-8 bg-black dark:bg-white rounded-full self-start></i>
-      <i w-8 h-8 bg-black dark:bg-white rounded-full self-center></i>
-      <i w-8 h-8 bg-black dark:bg-white rounded-full self-end></i>
-   </div>
-   <div w-80 h-80 flex border p-10 m-10 rounded-8 justify-center items-center flex-wrap>
-      <div w="100%" h-8 flex justify-around>
-         <i w-8 h-8 bg-black dark:bg-white rounded-full></i>
-         <i w-8 h-8 bg-black dark:bg-white rounded-full></i>
+  <div flex w-80 my-25 mx-auto rounded-3 border p-5 flex-wrap justify-center shadow>
+    <div w-20 h-20 flex border p="2.5" m="2.5" rounded-2 justify-center items-center>
+      <i w-2 h-2 bg-black dark:bg-white rounded-full />
+    </div>
+    <div w-20 h-20 flex border p="2.5" m="2.5" rounded-2 flex-col items-center justify-around>
+      <i w-2 h-2 bg-black dark:bg-white rounded-full />
+      <i w-2 h-2 bg-black dark:bg-white rounded-full />
+    </div>
+    <div w-20 h-20 flex border p="2.5" m="2.5" rounded-2 flex-col justify-around>
+      <i w-2 h-2 bg-black dark:bg-white rounded-full self-start />
+      <i w-2 h-2 bg-black dark:bg-white rounded-full self-center />
+      <i w-2 h-2 bg-black dark:bg-white rounded-full self-end />
+    </div>
+    <div w-20 h-20 flex border p="2.5" m="2.5" rounded-2 justify-center items-center flex-wrap>
+      <div w="100%" h-2 flex justify-around>
+        <i w-2 h-2 bg-black dark:bg-white rounded-full />
+        <i w-2 h-2 bg-black dark:bg-white rounded-full />
       </div>
-      <div w="100%" h-8 flex justify-around>
-         <i w-8 h-8 bg-black dark:bg-white rounded-full></i>
-         <i w-8 h-8 bg-black dark:bg-white rounded-full></i>
+      <div w="100%" h-2 flex justify-around>
+        <i w-2 h-2 bg-black dark:bg-white rounded-full />
+        <i w-2 h-2 bg-black dark:bg-white rounded-full />
       </div>
-   </div>
-   <div w-80 h-80 flex border p-10 m-10 rounded-8 justify-center items-center flex-wrap>
-      <div w="100%" h-8 flex justify-around>
-         <i w-8 h-8 bg-black dark:bg-white rounded-full></i>
-         <i w-8 h-8 bg-black dark:bg-white rounded-full></i>
+    </div>
+    <div w-20 h-20 flex border p="2.5" m="2.5" rounded-2 justify-center items-center flex-wrap>
+      <div w="100%" h-2 flex justify-around>
+        <i w-2 h-2 bg-black dark:bg-white rounded-full />
+        <i w-2 h-2 bg-black dark:bg-white rounded-full />
       </div>
-      <i w-8 h-8 bg-black dark:bg-white rounded-full></i>
-      <div w="100%" h-8 flex justify-around>
-         <i w-8 h-8 bg-black dark:bg-white rounded-full></i>
-         <i w-8 h-8 bg-black dark:bg-white rounded-full></i>
+      <i w-2 h-2 bg-black dark:bg-white rounded-full />
+      <div w="100%" h-2 flex justify-around>
+        <i w-2 h-2 bg-black dark:bg-white rounded-full />
+        <i w-2 h-2 bg-black dark:bg-white rounded-full />
       </div>
-   </div>
-   <div w-80 h-80 flex border p-10 m-10 rounded-8 justify-center items-center flex-wrap>
-      <div w="100%" h-8 flex justify-around>
-         <i w-8 h-8 bg-black dark:bg-white rounded-full></i>
-         <i w-8 h-8 bg-black dark:bg-white rounded-full></i>
+    </div>
+    <div w-20 h-20 flex border p="2.5" m="2.5" rounded-2 justify-center items-center flex-wrap>
+      <div w="100%" h-2 flex justify-around>
+        <i w-2 h-2 bg-black dark:bg-white rounded-full />
+        <i w-2 h-2 bg-black dark:bg-white rounded-full />
       </div>
-      <div w="100%" h-8 flex justify-around>
-         <i w-8 h-8 bg-black dark:bg-white rounded-full></i>
-         <i w-8 h-8 bg-black dark:bg-white rounded-full></i>
+      <div w="100%" h-2 flex justify-around>
+        <i w-2 h-2 bg-black dark:bg-white rounded-full />
+        <i w-2 h-2 bg-black dark:bg-white rounded-full />
       </div>
-      <div w="100%" h-8 flex justify-around>
-         <i w-8 h-8 bg-black dark:bg-white rounded-full></i>
-         <i w-8 h-8 bg-black dark:bg-white rounded-full></i>
+      <div w="100%" h-2 flex justify-around>
+        <i w-2 h-2 bg-black dark:bg-white rounded-full />
+        <i w-2 h-2 bg-black dark:bg-white rounded-full />
       </div>
-   </div>
+    </div>
   </div>
 </template>

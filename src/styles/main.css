@@ -1,19 +1,104 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+html body {
+  min-width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* 
+1
+100vw/x = 750px/100rem
+
+*/
+
+/**
+以375为基础稿
+  100vw      320px
+--------- =  --------
+  x vw      14px(默认375的大小是16px)
+
+    ===  x = 4.375 
+
+**/
+@media screen and (min-width: 0px) and (max-width: 320px) {
   html {
-    font-size: 4px;  /** 方便unocss计算：1单位 = 0.25rem = 1px */
+    font-size: 14px;
+    min-width: 320px;
   }
-  
-  body {
+}
+
+/**
+以375为基础稿
+  100vw      375px
+--------- =  ------------
+  x vw      16px
+
+    ===  x = 4.26vw 
+**/
+@media screen and (min-width: 375px) {
+  html {
     font-size: 16px;
+    min-width: 375px;
   }
-  
-  html,
-  body,
-  #app {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
+}
 
-  html.dark {
+/**
+以375为基础稿
+  100vw       400px
+--------- =  --------
+x vw        18px
 
+    ===  x = 4.5vw 
+**/
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 18px;
+    min-width: 400px;
   }
+}
+
+/**
+以375为基础稿
+  100vw     500px
+--------- =  --------
+  x vw   20px
+
+    ===  x = 4vw 
+**/
+@media screen and (min-width: 500px) {
+  html {
+    font-size: 20px;
+    min-width: 500px;
+  }
+}
+
+/* 公共组件库的样式， 主要的颜色值需要与unocss.config.ts中的保持一致 */
+:root {
+  --font-size-xs: 10px;
+  --font-size-sm: 12px;
+  --font-size-md: 14px;
+  --font-size-lg: 16px;
+  --icon-size-xs: 16px;
+  --icon-size-sm: 18px;
+  --icon-size-md: 20px;
+  --icon-size-lg: 22px;
+  --color-body: #fff;
+  --color-text: #333;
+  --color-primary: #3a7afe;
+  --color-info: #00afef;
+  --color-success: #00c48f;
+  --color-warning: #ff9f00;
+  --color-danger: #f44336;
+  --color-disabled: #e0e0e0;
+  --color-text-disabled: #aaa;
+  --cubic-bezier: cubic-bezier(0.25, 0.8, 0.5, 1);
+}
