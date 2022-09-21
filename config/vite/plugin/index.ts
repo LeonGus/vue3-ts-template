@@ -4,11 +4,12 @@
  * @author Leon
  * @Date 2022-09-15 09:49:04
  * @LastEditors Leon
- * @LastEditTime 2022-09-16 13:51:56
+ * @LastEditTime 2022-09-21 14:20:42
  */
 import vue from '@vitejs/plugin-vue'
 import { CreateAutoImport } from './autoImport'
 import { CreateRegistryComponent } from './component'
+import { CreateAutoIcons } from './Icons'
 import { CreatePagesPlugin } from './pages'
 import { CreateUnocss } from './unocss'
 
@@ -21,6 +22,7 @@ export function CreateVitePlugins() {
     CreateAutoImport(),
     CreateRegistryComponent(),
     CreateUnocss(),
+    CreateAutoIcons(),
   ]
   return plugins
 }

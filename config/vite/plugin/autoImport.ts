@@ -4,10 +4,11 @@
  * @author Leon
  * @Date 2022-09-15 10:35:18
  * @LastEditors Leon
- * @LastEditTime 2022-09-21 10:55:58
+ * @LastEditTime 2022-09-21 14:26:30
  */
 import AutoImport from 'unplugin-auto-import/vite'
 import HElementPlusResolver from '@hgj/element-plus-import-resolver'
+import IconsResolver from 'unplugin-icons/resolver'
 
 export const CreateAutoImport = () => {
   return AutoImport({
@@ -26,6 +27,12 @@ export const CreateAutoImport = () => {
       // ...
     ],
     vueTemplate: true,
-    resolvers: [HElementPlusResolver()],
+    resolvers: [
+      HElementPlusResolver(),
+      IconsResolver({
+        // 自动引入 svg的前缀
+        prefix: 'Icon',
+      }),
+    ],
   })
 }

@@ -19,6 +19,12 @@ const { userAge, addAge } = toRefs(useUser())
         ++
       </el-button>
     </p>
+    <div>
+      <el-icon><i-base-vue /></el-icon>
+      <el-icon size="12" color="skyblue">
+        <i-ep-arrow-down />
+      </el-icon>
+    </div>
   </div>
 </template>
 
