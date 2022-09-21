@@ -14,6 +14,6 @@
     padding: 0;
   }
 
-  html.dark {
-
+  :root {
+    --el-color-primary: #D92324;
   }

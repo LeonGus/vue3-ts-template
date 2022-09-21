@@ -4,9 +4,10 @@
  * @author Leon
  * @Date 2022-09-15 10:35:18
  * @LastEditors Leon
- * @LastEditTime 2022-09-16 13:52:00
+ * @LastEditTime 2022-09-21 10:55:58
  */
 import AutoImport from 'unplugin-auto-import/vite'
+import HElementPlusResolver from '@hgj/element-plus-import-resolver'
 
 export const CreateAutoImport = () => {
   return AutoImport({
@@ -25,5 +26,6 @@ export const CreateAutoImport = () => {
       // ...
     ],
     vueTemplate: true,
+    resolvers: [HElementPlusResolver()],
   })
 }
