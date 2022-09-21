@@ -15,9 +15,9 @@ const { userAge, addAge } = toRefs(useUser())
     <i icon-btn i-carbon-logo-github align-text-top />
     <p>
       store: 测试{{ userAge }}
-      <button @click="addAge">
+      <el-button @click="addAge">
         ++
-      </button>
+      </el-button>
     </p>
   </div>
 </template>
